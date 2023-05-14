@@ -132,7 +132,7 @@ def main():
     imageResult = make_dithering(image, imageGradient)
 
     w, h = imageResult.size
-    imageResult = imageResult.resize((w*4,h*4), Image.NEAREST)
+    imageResult = imageResult.resize((w*3,h*3), Image.NEAREST)
     
     filename = "output.png"
     imageResult.save(filename)
